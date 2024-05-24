@@ -1,0 +1,9 @@
+Logs/
+Packages/
+Temp/
+Library/
+*.sln
+*.json
+Assembly-CSharp.csproj
+UserSettings/
+ProjectSettings/
