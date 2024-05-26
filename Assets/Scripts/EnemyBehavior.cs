@@ -27,8 +27,8 @@ public class EnemyBehavior : MonoBehaviour
         if (Vector3.Distance(transform.position, player.transform.position) <= detectionRange)
         {
             transform.LookAt(player);
-            transform.position =
-                Vector3.MoveTowards(transform.position, player.position, step);
+            Vector3 targetPosition = new Vector3(player.position.x, 0, player.position.z);
+            transform.position = Vector3.MoveTowards(transform.position, targetPosition, step);
         }
     }
 
