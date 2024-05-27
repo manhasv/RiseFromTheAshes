@@ -22,7 +22,7 @@ public class DoorBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(transform.position, player.position) <= 10)
+        if (Vector3.Distance(transform.position, player.position) <= 4)
         {
             gameAnnouncerText.gameObject.SetActive(true);
             gameAnnouncerText.text = "Click F to teleport to first floor";
