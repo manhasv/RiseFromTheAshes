@@ -24,7 +24,7 @@ public class PickupBehavior : MonoBehaviour
         if (Vector3.Distance(transform.position, player.position) <= pickUpDistance)
         {
             gameAnnouncerText.gameObject.SetActive(true);
-            gameAnnouncerText.text = "Hit Pickup";
+            gameAnnouncerText.text = "Hit F to Pickup";
             pickUpAble = true;
         } else {
             gameAnnouncerText.gameObject.SetActive(false);
@@ -35,6 +35,8 @@ public class PickupBehavior : MonoBehaviour
             gameAnnouncerText.gameObject.SetActive(false);
             Destroy(gameObject);
             player.GetComponent<PlayerBehavior>().AddGold(value);
+            
+            
         }
     }
 }
