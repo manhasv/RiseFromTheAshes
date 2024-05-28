@@ -26,7 +26,9 @@ public class PickupBehavior : MonoBehaviour
             gameAnnouncerText.gameObject.SetActive(true);
             gameAnnouncerText.text = "Hit F to Pickup";
             pickUpAble = true;
-        } else {
+        }
+        else
+        {
             gameAnnouncerText.gameObject.SetActive(false);
         }
 
@@ -35,8 +37,8 @@ public class PickupBehavior : MonoBehaviour
             gameAnnouncerText.gameObject.SetActive(false);
             Destroy(gameObject);
             player.GetComponent<PlayerBehavior>().AddGold(value);
-            
-            
+
+
         }
     }
 }

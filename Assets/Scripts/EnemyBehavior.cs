@@ -9,11 +9,14 @@ public class EnemyBehavior : MonoBehaviour
     public int enemyAttack = 1;
     public int enemySpeed = 2;
     public int detectionRange = 10;
-   
+
+    private LevelManager levelManager;
 
     // Start is called before the first frame update
     void Start()
     {
+        levelManager = FindObjectOfType<LevelManager>();
+
         if (player == null)
         {
             player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -39,6 +42,14 @@ public class EnemyBehavior : MonoBehaviour
             //TODO: find projectile damage
             enemyHealth -= 1;
             CheckHealth();
+        }
+        else if (collision.gameObject.CompareTag("Player"))
+        {
+            PlayerBehavior player = collision.gameObject.GetComponent<PlayerBehavior>();
+            if (player != null)
+            {
+                player.TakeDamage();
+            }
         }
     }
 

@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerController.cs">
+    <Files>
+      <File FileName="Assets/Scripts/EnemyBehavior.cs" Line="49" Column="21" />
+      <File FileName="Assets/Scripts/PlayerBehavior.cs" Line="9" Column="25" />
+      <File FileName="Assets/Scripts/LevelManager.cs" />
+      <File FileName="Assets/Scripts/PickUpBehavior.cs" Line="44" Column="2" />
+      <File FileName="Assets/Scripts/PickableBehavior.cs" Line="28" Column="2" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Project" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="PlayerController.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="46038a9e-9fc3-4b16-b40e-231ac8cbe5a1" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
