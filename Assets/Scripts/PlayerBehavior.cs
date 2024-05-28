@@ -7,54 +7,66 @@ using UnityEngine.UI;
 public class PlayerBehavior : MonoBehaviour
 {
     public static float currentGold = 0;
-    public static int currentHealth = 10;
-
-    private LevelManager levelManager;
-
+    public float startingHealth = 100;
+    private float currentHealth;
+    public float passingGold = 30;
+    public Text goldText;
+    public Slider healthBar;
     void Start()
     {
-        levelManager = FindObjectOfType<LevelManager>();
-        levelManager.UpdateGold(currentGold);
-        levelManager.UpdateHealth(currentHealth);
+        startingHealth = 100;
+        currentHealth = startingHealth;
+        healthBar.maxValue = startingHealth;
+        if (currentGold > 0) {
+            goldText.text = "Gold: " + currentGold;
+        } else {
+            goldText.text = "Gold: 0";
+        }
     }
-
 
     void Update()
     {
-        if (transform.position.y < 0)
+        if (transform.position.y < -50)
         {
-            levelManager.LevelLost();
+            FindObjectOfType<LevelManager>().LevelLost();
         }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
-        {
-            TakeDamage();
-            //FindObjectOfType<LevelManager>().LevelLost();
-            //Destroy(gameObject);
-        }
+        // if (collision.gameObject.CompareTag("Enemy"))
+        // {
+        //     TakeDamage(1);
+        // }
 
     }
 
     public void AddGold(float amount)
     {
         currentGold += amount;
-        levelManager.UpdateGold(currentGold);
-        if (currentGold >= 5)
+        goldText.text = "Gold: " + currentGold;
+        //FindObjectOfType<LevelManager>().UpdateGold(currentGold);
+        if (currentGold >= passingGold)
         {
-            levelManager.MissionComplete();
+            FindObjectOfType<LevelManager>().MissionComplete();
         }
     }
 
-    public void TakeDamage()
+    public void TakeDamage(float damage)
     {
-        currentHealth--;
-        levelManager.UpdateHealth(currentHealth);
+        if (currentHealth > 0) 
+        {
+            currentHealth -= damage;
+            healthBar.value = currentHealth;
+        } 
+        if (currentHealth <= 0) {
+            healthBar.value = 0;
+        }
+        Debug.Log("Current Health: " + currentHealth);
+        //FindObjectOfType<LevelManager>().UpdateHealth(currentHealth);
         if (currentHealth <= 0)
         {
-            levelManager.LevelLost();
+            FindObjectOfType<LevelManager>().LevelLost();
         }
     }
 

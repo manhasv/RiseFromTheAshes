@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bd4274e982561f4da44a242815c81ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 200
+  mouseSensitivity: 100
 --- !u!1 &4257072589435875353
 GameObject:
   m_ObjectHideFlags: 0
@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 8839419221432784253}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -256,7 +256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 8
-  jumpHeight: 3
+  jumpHeight: 2
   gravity: 9.81
   airControl: 10
 --- !u!114 &8839419221432784253
@@ -271,3 +271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdc41e2bbb1c0ca4e870aeba7de940b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startingHealth: 100
+  passingGold: 30
+  goldText: {fileID: 0}
+  healthBar: {fileID: 0}

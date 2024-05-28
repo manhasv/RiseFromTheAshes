@@ -46,7 +46,7 @@ public class LevelManager : MonoBehaviour
         goldText.text = "Your Gold: " + currentGold;
     }
 
-    public void UpdateHealth(int currentHealth)
+    public void UpdateHealth(float currentHealth)
     {
         healthBar.value = currentHealth;
     }

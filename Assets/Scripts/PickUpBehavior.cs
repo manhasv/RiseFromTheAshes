@@ -37,8 +37,6 @@ public class PickupBehavior : MonoBehaviour
             gameAnnouncerText.gameObject.SetActive(false);
             Destroy(gameObject);
             player.GetComponent<PlayerBehavior>().AddGold(value);
-
-
         }
     }
 }
