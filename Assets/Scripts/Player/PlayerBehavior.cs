@@ -8,13 +8,16 @@ public class PlayerBehavior : MonoBehaviour
 {
     public static float currentGold = 0;
     public float startingHealth = 100;
-    private float currentHealth;
+    private static float currentHealth = 0;
     public Text goldText;
     public Slider healthBar;
     void Start()
     {
-        startingHealth = 100;
-        currentHealth = startingHealth;
+        
+        if (currentHealth == 0)
+        {
+            currentHealth = startingHealth;
+        }
         healthBar.maxValue = startingHealth;
         goldText.text = "Gold: " + currentGold;
     }
@@ -35,6 +38,11 @@ public class PlayerBehavior : MonoBehaviour
     public void AddGold(float amount)
     {
         currentGold += amount;
+        goldText.text = "Gold: " + currentGold;
+    }
+    public void RemoveGold(float amount)
+    {
+        currentGold -= amount;
         goldText.text = "Gold: " + currentGold;
     }
 
