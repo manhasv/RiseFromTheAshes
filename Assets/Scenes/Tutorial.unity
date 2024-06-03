@@ -648,10 +648,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2562957079599513073, guid: 427f0132805b89748b269171c7a6b416, type: 3}
-      propertyPath: itemIcon
-      value: 
-      objectReference: {fileID: 21300000, guid: cbcefaca00b59f448be35da1b4514741, type: 3}
     - target: {fileID: 3703109149693665422, guid: 427f0132805b89748b269171c7a6b416, type: 3}
       propertyPath: m_LocalPosition.x
       value: -214.08054
@@ -696,10 +692,6 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1395547821}
-    - target: {fileID: 3987682973811172634, guid: 427f0132805b89748b269171c7a6b416, type: 3}
-      propertyPath: inventoryManager
-      value: 
-      objectReference: {fileID: 1581384565}
     - target: {fileID: 3987682973811172634, guid: 427f0132805b89748b269171c7a6b416, type: 3}
       propertyPath: gameAnnouncerText
       value: 
@@ -919,17 +911,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 9.189514, y: 1.5374563, z: 8.696228}
   m_Center: {x: 2.6998062, y: 0.5896809, z: -4.348053}
---- !u!114 &1581384565 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3029119939115918895, guid: f95081c33892c524b8c0eb7b27933066, type: 3}
-  m_PrefabInstance: {fileID: 5883962778475149270}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 747ff75fc5b7f1849b99b9c8e0e1ab91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1649592917
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1766,6 +1747,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3029119939115918895, guid: f95081c33892c524b8c0eb7b27933066, type: 3}
+      propertyPath: goldPrefab
+      value: 
+      objectReference: {fileID: 21300000, guid: cbcefaca00b59f448be35da1b4514741, type: 3}
     - target: {fileID: 5381876372481825577, guid: f95081c33892c524b8c0eb7b27933066, type: 3}
       propertyPath: inventoryPanel
       value: 

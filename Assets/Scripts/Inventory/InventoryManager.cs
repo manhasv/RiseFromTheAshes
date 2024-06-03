@@ -6,12 +6,17 @@ using UnityEngine;
 public class InventoryManager : MonoBehaviour
 {
     public List<InventoryItem> inventory = new List<InventoryItem>();
+    public Sprite goldPrefab;
 
     private InventoryUIManager inventoryUIManager;
 
     void Start()
     {
         inventoryUIManager = FindObjectOfType<InventoryUIManager>();
+        if (PlayerBehavior.currentGold > 0)
+        {
+            AddItem("Gold", 1, Mathf.RoundToInt(PlayerBehavior.currentGold), goldPrefab);
+        }
     }
 
     public void AddItem(string name, int id, int qty, Sprite icon)
