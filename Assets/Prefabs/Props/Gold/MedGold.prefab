@@ -168,4 +168,4 @@ MonoBehaviour:
   itemName: Gold
   itemID: 1
   quantity: 1
-  itemIcon: {fileID: 0}
+  itemIcon: {fileID: 21300000, guid: cbcefaca00b59f448be35da1b4514741, type: 3}

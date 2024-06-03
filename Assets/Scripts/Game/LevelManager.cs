@@ -61,9 +61,8 @@ public class LevelManager : MonoBehaviour
         gameText.text = "GAME OVER!";
         gameText.gameObject.SetActive(true);
 
-        AudioSource.PlayClipAtPoint(gameOverSFX, GameObject.FindGameObjectWithTag("Player").transform.position);
+        AudioSource.PlayClipAtPoint(gameOverSFX, transform.position);
 
-        GameObject.FindGameObjectWithTag("Player").SetActive(false);
         Invoke("LoadCurrentLevel", 2);
     }
 
@@ -79,8 +78,6 @@ public class LevelManager : MonoBehaviour
         gameText.gameObject.SetActive(true);
 
         AudioSource.PlayClipAtPoint(gameWonSFX, GameObject.FindGameObjectWithTag("Player").transform.position);
-
-        GameObject.FindGameObjectWithTag("Player").SetActive(false);
     }
 
 }

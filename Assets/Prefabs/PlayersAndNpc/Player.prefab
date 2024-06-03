@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 8945491119545436179}
   - component: {fileID: 7642711682384199905}
   - component: {fileID: 2298514205335101378}
-  - component: {fileID: 587403167817389052}
   - component: {fileID: 1537855206006017102}
   - component: {fileID: 5395326133487343643}
+  - component: {fileID: 7522172653607247078}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -141,22 +141,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Slot1: {fileID: 5164728722496025083}
---- !u!114 &587403167817389052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3492213922438254317}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f722fed33894f4741b878439019d639f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 12
-  jumpHeight: 2
-  gravity: 9.81
-  airControl: 10
 --- !u!143 &1537855206006017102
 CharacterController:
   m_ObjectHideFlags: 0
@@ -196,9 +180,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 100
-  passingGold: 30
   goldText: {fileID: 0}
   healthBar: {fileID: 0}
+--- !u!114 &7522172653607247078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3492213922438254317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f76c3443af3767a41a2e72bd079a0750, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 7
+  jumpHeight: 2
+  gravity: 9.81
+  airControl: 10
 --- !u!1 &5216010360179803063
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2366685087673041698}
   - component: {fileID: 1210409433343465544}
   - component: {fileID: 1350435457923549890}
+  - component: {fileID: 5240193224595402274}
   m_Layer: 0
   m_Name: Chest
   m_TagString: Pickable
@@ -153,6 +154,22 @@ MonoBehaviour:
   pickUpDistance: 4
   value: 10
   gameAnnouncerText: {fileID: 0}
+--- !u!114 &5240193224595402274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835662756248199429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71ab2900b0ba50b47804e8c11f35d77d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 'Gold '
+  itemID: 1
+  quantity: 10
+  itemIcon: {fileID: 21300000, guid: cbcefaca00b59f448be35da1b4514741, type: 3}
 --- !u!1 &1223494230265235850
 GameObject:
   m_ObjectHideFlags: 0

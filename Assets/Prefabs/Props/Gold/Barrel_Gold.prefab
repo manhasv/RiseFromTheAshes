@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 650846698221630243}
   - component: {fileID: 5411088781280515170}
   - component: {fileID: 428166926221930914}
+  - component: {fileID: 1571733002136913321}
   m_Layer: 0
   m_Name: Barrel_Gold
   m_TagString: Pickable
@@ -125,3 +126,19 @@ MonoBehaviour:
   pickUpDistance: 4
   value: 10
   gameAnnouncerText: {fileID: 0}
+--- !u!114 &1571733002136913321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8573489369030998943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71ab2900b0ba50b47804e8c11f35d77d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Gold
+  itemID: 1
+  quantity: 10
+  itemIcon: {fileID: 21300000, guid: cbcefaca00b59f448be35da1b4514741, type: 3}
