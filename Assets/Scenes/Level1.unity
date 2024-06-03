@@ -2917,8 +2917,16 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2419782066796031719, guid: 8c00fb7ad82e0e64b9e5d3edfaf38b7c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1603362059}
   m_SourcePrefab: {fileID: 100100000, guid: 8c00fb7ad82e0e64b9e5d3edfaf38b7c, type: 3}
+--- !u!1 &904191388 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2419782066796031719, guid: 8c00fb7ad82e0e64b9e5d3edfaf38b7c, type: 3}
+  m_PrefabInstance: {fileID: 904191387}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &906743166 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2257674495228494570, guid: c202e4710c089401b87edca3bff23b50, type: 3}
@@ -4625,6 +4633,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2288609183707900856, guid: 8c00fb7ad82e0e64b9e5d3edfaf38b7c, type: 3}
   m_PrefabInstance: {fileID: 904191387}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1603362059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 904191388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71ab2900b0ba50b47804e8c11f35d77d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Small Gold
+  itemID: 2
+  quantity: 1
+  itemIcon: {fileID: 21300000, guid: cbcefaca00b59f448be35da1b4514741, type: 3}
 --- !u!1001 &1637981467
 PrefabInstance:
   m_ObjectHideFlags: 0
