@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3402079081241402107}
   - component: {fileID: 825933391569182800}
   - component: {fileID: 3987682973811172634}
+  - component: {fileID: 2562957079599513073}
   m_Layer: 0
   m_Name: MedGold
   m_TagString: Pickable
@@ -150,3 +151,19 @@ MonoBehaviour:
   pickUpDistance: 4
   value: 5
   gameAnnouncerText: {fileID: 0}
+--- !u!114 &2562957079599513073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7314818075693065692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71ab2900b0ba50b47804e8c11f35d77d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Gold
+  itemID: 1
+  quantity: 1
+  itemIcon: {fileID: 0}

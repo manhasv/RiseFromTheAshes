@@ -35,8 +35,12 @@ public class PickupBehavior : MonoBehaviour
         if (pickUpAble && Input.GetKeyDown(KeyCode.F))
         {
             gameAnnouncerText.gameObject.SetActive(false);
+            // add item to inventory 
+            ItemPickup item = GetComponent<ItemPickup>();
+            FindObjectOfType<InventoryManager>().AddItem(item.itemName, item.itemID, item.quantity, item.itemIcon);
             Destroy(gameObject);
             player.GetComponent<PlayerBehavior>().AddGold(value);
+
         }
     }
 }
