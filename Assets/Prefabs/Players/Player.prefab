@@ -271,7 +271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdc41e2bbb1c0ca4e870aeba7de940b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 100
+  startingHealth: 20
   passingGold: 30
   goldText: {fileID: 0}
   healthBar: {fileID: 0}

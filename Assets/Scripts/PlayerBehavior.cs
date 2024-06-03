@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class PlayerBehavior : MonoBehaviour
 {
     public static float currentGold = 0;
-    public float startingHealth = 100;
+    public float startingHealth = 20;
     private float currentHealth;
     public float passingGold = 30;
     public Text goldText;
