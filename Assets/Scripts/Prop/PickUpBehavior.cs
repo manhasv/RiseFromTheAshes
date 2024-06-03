@@ -45,6 +45,8 @@ public class PickupBehavior : MonoBehaviour
             AudioSource.PlayClipAtPoint(pickupSFX, transform.position);
             Instantiate(particleEffect, transform.position, transform.rotation);
             player.GetComponent<PlayerBehavior>().AddGold(value);
+            ItemPickup item = GetComponent<ItemPickup>();
+            FindObjectOfType<InventoryManager>().AddItem(item.itemName, item.itemID, item.quantity, item.itemIcon);
             Destroy(gameObject);
             
         }

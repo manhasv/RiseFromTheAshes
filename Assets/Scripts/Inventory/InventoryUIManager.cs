@@ -22,7 +22,7 @@ public class InventoryUIManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.I))
         {
             flip = !flip;
             inventoryPanel.SetActive(flip);
