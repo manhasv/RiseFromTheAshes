@@ -7,6 +7,7 @@ public class PickupBehavior : MonoBehaviour
 {
     public Transform player;
     public AudioClip pickupSFX;
+    public ParticleSystem particleEffect;
 
 
     public float pickUpDistance = 4f;
@@ -40,6 +41,7 @@ public class PickupBehavior : MonoBehaviour
         {
             gameAnnouncerText.gameObject.SetActive(false);
             AudioSource.PlayClipAtPoint(pickupSFX, Camera.main.transform.position);
+            Instantiate(particleEffect, transform.position, transform.rotation);
             Destroy(gameObject);
             player.GetComponent<PlayerBehavior>().AddGold(value);
         }
