@@ -6,6 +6,9 @@ using UnityEngine.UI;
 public class PickupBehavior : MonoBehaviour
 {
     public Transform player;
+    public AudioClip pickupSFX;
+
+
     public float pickUpDistance = 4f;
 
     public float value = 1f;
@@ -16,6 +19,7 @@ public class PickupBehavior : MonoBehaviour
     void Start()
     {
         gameAnnouncerText.gameObject.SetActive(false);
+        player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     // Update is called once per frame
@@ -35,6 +39,7 @@ public class PickupBehavior : MonoBehaviour
         if (pickUpAble && Input.GetKeyDown(KeyCode.F))
         {
             gameAnnouncerText.gameObject.SetActive(false);
+            AudioSource.PlayClipAtPoint(pickupSFX, Camera.main.transform.position);
             Destroy(gameObject);
             player.GetComponent<PlayerBehavior>().AddGold(value);
         }

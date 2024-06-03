@@ -147,6 +147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  pickupSFX: {fileID: 8300000, guid: 5ae2146a9e5bc44579835efdfeaa90a9, type: 3}
   pickUpDistance: 4
   value: 5
   gameAnnouncerText: {fileID: 0}
