@@ -4515,7 +4515,6 @@ GameObject:
   m_Component:
   - component: {fileID: 454750648318027654}
   - component: {fileID: 8886878904557967609}
-  - component: {fileID: 2503116439231212530}
   - component: {fileID: 3552087917473731486}
   - component: {fileID: 7447600292405909667}
   - component: {fileID: -6927099855458460098}
@@ -4604,18 +4603,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2503116439231212530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7005221909868853790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d377f8aab894d4048b93efbbb534ab98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &3552087917473731486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4629,10 +4616,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  enemyHealth: 5
-  enemySpeed: 2
+  speed: 2
   detectionRange: 100
   damage: 2
+  minDistance: 3
 --- !u!54 &7447600292405909667
 Rigidbody:
   m_ObjectHideFlags: 0
