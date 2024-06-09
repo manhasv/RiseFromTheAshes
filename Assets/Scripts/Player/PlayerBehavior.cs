@@ -47,6 +47,11 @@ public class PlayerBehavior : MonoBehaviour
         goldText.text = "Gold: " + currentGold;
     }
 
+    public float GetGold()
+    {
+        return currentGold;
+    }
+
     public void TakeDamage(float damage)
     {
         if (currentHealth > 0) 

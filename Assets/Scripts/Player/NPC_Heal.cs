@@ -34,7 +34,7 @@ public class NPC_Heal : MonoBehaviour
             NPC_Text.gameObject.SetActive(false);
         }
 
-        if (interactable && Input.GetKeyDown(KeyCode.F))
+        if (interactable && Input.GetKeyDown(KeyCode.F) && player.GetComponent<PlayerBehavior>().GetGold() >= price)
         {
             player.GetComponent<PlayerBehavior>().RemoveGold(price);
             player.GetComponent<PlayerBehavior>().Heal(healAmount);
