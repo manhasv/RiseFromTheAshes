@@ -2,12 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
-public class NPC_Heal : MonoBehaviour
+public class NPC_DamageBuff : MonoBehaviour
 {
     public Transform player;
-    public int healAmount = 10;
-    public float price = 1;
+    public float price = 50;
     private bool interactable;
     public Text NPC_Text;
     // Start is called before the first frame update
@@ -27,7 +25,7 @@ public class NPC_Heal : MonoBehaviour
         {
             interactable = true;
             NPC_Text.gameObject.SetActive(true);
-            NPC_Text.text = "Press F to pay " + price + " gold for " + healAmount + " HP";
+            NPC_Text.text = "Press F to pay " + price + " gold for 1 damage buff";
         }
         else
         {
@@ -38,7 +36,6 @@ public class NPC_Heal : MonoBehaviour
         if (interactable && Input.GetKeyDown(KeyCode.F) && player.GetComponent<PlayerBehavior>().GetGold() >= price)
         {
             player.GetComponent<PlayerBehavior>().RemoveGold(price);
-            player.GetComponent<PlayerBehavior>().Heal(healAmount);
         }
     }
 }

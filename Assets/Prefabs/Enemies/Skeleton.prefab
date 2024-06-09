@@ -4629,10 +4629,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  enemyHealth: 5
-  enemySpeed: 2
+  speed: 2
   detectionRange: 100
   damage: 2
+  minDistance: 3
 --- !u!54 &7447600292405909667
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4695,6 +4695,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyHealth: 5
   healthSlider: {fileID: 1425161872564260115}
+  gold: {fileID: 2419782066796031719, guid: 8c00fb7ad82e0e64b9e5d3edfaf38b7c, type: 3}
+  chance: 30
 --- !u!1 &7089123353624535710
 GameObject:
   m_ObjectHideFlags: 0

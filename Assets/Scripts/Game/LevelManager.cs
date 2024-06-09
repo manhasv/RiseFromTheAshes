@@ -17,12 +17,12 @@ public class LevelManager : MonoBehaviour
     private float textTimer = 0f;
     public static bool level2Key = false;
     public static bool hasGun = false;
+    public static float playerDamage = 1;
     void Start()
     {
         isGameOver = false;
         missionCompleteText.gameObject.SetActive(false);
         gameText.gameObject.SetActive(false);
-        //StartCoroutine(DisplayText());
     }
 
     void Update()
@@ -50,7 +50,7 @@ public class LevelManager : MonoBehaviour
 
     public void MissionComplete()
     {
-        missionCompleteText.text = "Mission Complete! You can return to the village!";
+        missionCompleteText.text = "Mission Complete! Find the gate to the next level";
         missionCompleteText.gameObject.SetActive(true);
         textTimer = 0f;
     }
@@ -74,7 +74,7 @@ public class LevelManager : MonoBehaviour
     public void LevelBeat()
     {
         isGameOver = true;
-        gameText.text = "GAME Win!";
+        gameText.text = "GAME WIN!";
         gameText.gameObject.SetActive(true);
 
         AudioSource.PlayClipAtPoint(gameWonSFX, GameObject.FindGameObjectWithTag("Player").transform.position);
