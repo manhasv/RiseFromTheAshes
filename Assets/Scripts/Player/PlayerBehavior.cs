@@ -11,6 +11,7 @@ public class PlayerBehavior : MonoBehaviour
     private static float currentHealth = 0;
     public Text goldText;
     public Slider healthBar;
+
     void Start()
     {
         
@@ -79,6 +80,14 @@ public class PlayerBehavior : MonoBehaviour
     {
         Debug.Log("Player is dead!");
         transform.Rotate(-90, 0, 0, Space.Self);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("stream"))
+        {
+            Die();
+        }
     }
 
 }
