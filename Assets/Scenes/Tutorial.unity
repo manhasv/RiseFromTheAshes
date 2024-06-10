@@ -999,6 +999,14 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 2087161687}
+    - target: {fileID: 5395326133487343643, guid: 4a9ed4435bf73f243a1e0f43033e85c6, type: 3}
+      propertyPath: takeDamageSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 794be7c4bd9e64c9bbb9776937807a9e, type: 3}
+    - target: {fileID: 7522172653607247078, guid: 4a9ed4435bf73f243a1e0f43033e85c6, type: 3}
+      propertyPath: jumpSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: a529f901bd51a994ab50b87aa4784457, type: 3}
     - target: {fileID: 7642711682384199905, guid: 4a9ed4435bf73f243a1e0f43033e85c6, type: 3}
       propertyPath: playerInteractButton
       value: 
@@ -1008,9 +1016,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3492213922438254317, guid: 4a9ed4435bf73f243a1e0f43033e85c6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1755115098}
     - targetCorrespondingSourceObject: {fileID: 5216010360179803063, guid: 4a9ed4435bf73f243a1e0f43033e85c6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1649592919}
@@ -1301,22 +1306,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3492213922438254317, guid: 4a9ed4435bf73f243a1e0f43033e85c6, type: 3}
   m_PrefabInstance: {fileID: 1649592917}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1755115098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1755115089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f76c3443af3767a41a2e72bd079a0750, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 7
-  jumpHeight: 1
-  gravity: 9.81
-  airControl: 10
 --- !u!1001 &1755262698
 PrefabInstance:
   m_ObjectHideFlags: 0

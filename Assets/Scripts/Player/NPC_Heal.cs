@@ -22,7 +22,6 @@ public class NPC_Heal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.LookAt(player);
         if (Vector3.Distance(transform.position, player.position) <= 4)
         {
             interactable = true;

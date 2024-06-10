@@ -93,9 +93,9 @@ public class PlayerBehavior : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("stream"))
+        if (other.gameObject.CompareTag("Stream"))
         {
-            Die();
+            TakeDamage(10);
         }
     }
 

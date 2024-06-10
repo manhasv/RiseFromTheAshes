@@ -15,9 +15,13 @@ public class LevelManager : MonoBehaviour
     public AudioClip gameWonSFX;
     private float textDuration = 5f;
     private float textTimer = 0f;
-    public static bool level2Key = false;
+
+
     public static bool hasGun = false;
     public static float playerDamage = 1;
+    public static bool level1 = false;
+    public static bool level2 = false;
+    
     void Start()
     {
         isGameOver = false;

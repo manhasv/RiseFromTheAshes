@@ -20,7 +20,6 @@ public class NPC_DamageBuff : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.LookAt(player);
         if (Vector3.Distance(transform.position, player.position) <= 4)
         {
             interactable = true;
@@ -36,6 +35,7 @@ public class NPC_DamageBuff : MonoBehaviour
         if (interactable && Input.GetKeyDown(KeyCode.F) && player.GetComponent<PlayerBehavior>().GetGold() >= price)
         {
             player.GetComponent<PlayerBehavior>().RemoveGold(price);
+            LevelManager.playerDamage += 1;
         }
     }
 }
