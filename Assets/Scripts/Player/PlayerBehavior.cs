@@ -12,6 +12,8 @@ public class PlayerBehavior : MonoBehaviour
     public Text goldText;
     public Slider healthBar;
 
+    public AudioClip takeDamageSFX;
+
     void Start()
     {
         
@@ -58,6 +60,8 @@ public class PlayerBehavior : MonoBehaviour
         {
             currentHealth -= damage;
             healthBar.value = currentHealth;
+
+            AudioSource.PlayClipAtPoint(takeDamageSFX, transform.position);
         } 
         if (currentHealth <= 0) {
             healthBar.value = 0;
