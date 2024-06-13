@@ -23,13 +23,12 @@ public class NPC_DamageBuff : MonoBehaviour
         if (Vector3.Distance(transform.position, player.position) <= 4)
         {
             interactable = true;
-            NPC_Text.gameObject.SetActive(true);
-            NPC_Text.text = "Press F to pay " + price + " gold for 1 damage buff";
+            NPC_Text.text = "Press F to pay " + price + " gold for 1 damage increase";
+            Debug.Log(NPC_Text.text);
         }
         else
         {
             interactable = false;
-            NPC_Text.gameObject.SetActive(false);
         }
 
         if (interactable && Input.GetKeyDown(KeyCode.F) && player.GetComponent<PlayerBehavior>().GetGold() >= price)

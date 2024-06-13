@@ -25,19 +25,17 @@ public class NPC_Heal : MonoBehaviour
         if (Vector3.Distance(transform.position, player.position) <= 4)
         {
             interactable = true;
-            NPC_Text.gameObject.SetActive(true);
-            NPC_Text.text = "Press F to pay " + price + " gold for " + healAmount + " HP";
+            NPC_Text.text = "Press F to pay " + price + " gold for " + healAmount + " HP increase";
         }
         else
         {
             interactable = false;
-            NPC_Text.gameObject.SetActive(false);
         }
 
         if (interactable && Input.GetKeyDown(KeyCode.F) && player.GetComponent<PlayerBehavior>().GetGold() >= price)
         {
             player.GetComponent<PlayerBehavior>().RemoveGold(price);
-            player.GetComponent<PlayerBehavior>().Heal(healAmount);
+            player.GetComponent<PlayerBehavior>().AddHealth(healAmount);
         }
     }
 }

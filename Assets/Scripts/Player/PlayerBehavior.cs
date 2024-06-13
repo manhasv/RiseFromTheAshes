@@ -7,21 +7,24 @@ using UnityEngine.UI;
 public class PlayerBehavior : MonoBehaviour
 {
     public static float currentGold = 0;
-    public float startingHealth = 100;
+    public float startingHealth;
+
+    public static float maxHealth = 100;
     private static float currentHealth = 0;
     public Text goldText;
     public Slider healthBar;
+    public Text healthText;
 
     public AudioClip takeDamageSFX;
 
     void Start()
     {
-        
+        startingHealth = maxHealth;
         if (currentHealth == 0)
         {
-            currentHealth = startingHealth;
+            currentHealth = maxHealth;
         }
-        healthBar.maxValue = startingHealth;
+        healthBar.maxValue = maxHealth;
         goldText.text = "Gold: " + currentGold;
     }
 
@@ -31,11 +34,14 @@ public class PlayerBehavior : MonoBehaviour
         {
             FindObjectOfType<LevelManager>().LevelLost();
         }
+
+        healthText.text = ((byte)currentHealth).ToString();
+        healthBar.value = currentHealth;
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-
+        TakeDamage(1);
     }
 
     public void AddGold(float amount)
@@ -83,6 +89,18 @@ public class PlayerBehavior : MonoBehaviour
             healthBar.value = Mathf.Clamp(currentHealth, 0, 100);
             Debug.Log("Player health: " + currentHealth);
         }
+    }
+
+    public void AddHealth(float health)
+    {
+        maxHealth += health;
+        if (currentHealth < maxHealth)
+        {
+            currentHealth += health;
+        } else {
+            currentHealth = maxHealth;
+        }
+        healthBar.value = currentHealth;
     }
 
     void Die()

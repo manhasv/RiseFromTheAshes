@@ -5218,7 +5218,7 @@ MonoBehaviour:
   enemyHealth: 15
   healthSlider: {fileID: 4775372107887901478}
   gold: {fileID: 7314818075693065692, guid: 427f0132805b89748b269171c7a6b416, type: 3}
-  chance: 50
+  chance: 70
 --- !u!54 &7747796572281679143
 Rigidbody:
   m_ObjectHideFlags: 0

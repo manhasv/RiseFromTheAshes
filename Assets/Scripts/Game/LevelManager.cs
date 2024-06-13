@@ -16,7 +16,6 @@ public class LevelManager : MonoBehaviour
     private float textDuration = 5f;
     private float textTimer = 0f;
 
-
     public static bool hasGun = false;
     public static float playerDamage = 1;
     public static bool level1 = false;

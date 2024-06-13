@@ -22,18 +22,16 @@ public class DoorBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(transform.position, player.position) <= 4)
+        if (Vector3.Distance(transform.position, player.position) <= 6)
         {
-            doorHint.gameObject.SetActive(true);
             doorHint.text = "Click F to teleport to " + sceneName;
             nearPlayer = true;
         } else {
-            doorHint.gameObject.SetActive(false);
+            nearPlayer = false;
         }
 
         if (nearPlayer && Input.GetKeyDown(KeyCode.F))
         {
-            doorHint.gameObject.SetActive(false);
             SceneManager.LoadScene(sceneName);
         }
     }
