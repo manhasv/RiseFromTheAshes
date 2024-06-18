@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8573489369030998943
+--- !u!1 &2278681177250652532
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,49 +8,47 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1508146827551496237}
-  - component: {fileID: 4196070384440629715}
-  - component: {fileID: 650846698221630243}
-  - component: {fileID: 5411088781280515170}
-  - component: {fileID: 428166926221930914}
-  - component: {fileID: 1571733002136913321}
+  - component: {fileID: 5118913536052785518}
+  - component: {fileID: 802423828654651241}
+  - component: {fileID: 1521170471931448752}
+  - component: {fileID: 844394458126333417}
   m_Layer: 0
-  m_Name: Barrel_Gold
-  m_TagString: Pickable
+  m_Name: SF_Env_TwistedTree_01
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1508146827551496237
+--- !u!4 &5118913536052785518
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8573489369030998943}
+  m_GameObject: {fileID: 2278681177250652532}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -125.25, y: 0, z: -145.04}
+  m_LocalPosition: {x: -87.43542, y: -160.39494, z: 7.6768417}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &4196070384440629715
+--- !u!33 &802423828654651241
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8573489369030998943}
-  m_Mesh: {fileID: 4300000, guid: 04bffdac1e25c0840a340bbb0f00f271, type: 3}
---- !u!23 &650846698221630243
+  m_GameObject: {fileID: 2278681177250652532}
+  m_Mesh: {fileID: 4300000, guid: db2304a6408d9164f915ff9ed4d56950, type: 3}
+--- !u!23 &1521170471931448752
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8573489369030998943}
+  m_GameObject: {fileID: 2278681177250652532}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -86,13 +84,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5411088781280515170
-MeshCollider:
+--- !u!65 &844394458126333417
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8573489369030998943}
+  m_GameObject: {fileID: 2278681177250652532}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -104,40 +102,6 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 04bffdac1e25c0840a340bbb0f00f271, type: 3}
---- !u!114 &428166926221930914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8573489369030998943}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9e0728d79ad1f14096d286f5388804e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  pickupSFX: {fileID: 8300000, guid: 5ae2146a9e5bc44579835efdfeaa90a9, type: 3}
-  particleEffect: {fileID: 7156633167851738641, guid: 10e83b6474a6f41509b1cb5d0fa27956, type: 3}
-  pickUpDistance: 4
-  value: 10
---- !u!114 &1571733002136913321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8573489369030998943}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71ab2900b0ba50b47804e8c11f35d77d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemName: Gold
-  itemID: 1
-  quantity: 10
-  itemIcon: {fileID: 21300000, guid: cbcefaca00b59f448be35da1b4514741, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 11.716217, y: 28.20328, z: 13.3674135}
+  m_Center: {x: 1.3081589, y: 13.175937, z: -2.175592}

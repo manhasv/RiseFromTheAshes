@@ -153,7 +153,6 @@ MonoBehaviour:
   particleEffect: {fileID: 7156633167851738641, guid: 10e83b6474a6f41509b1cb5d0fa27956, type: 3}
   pickUpDistance: 4
   value: 10
-  gameAnnouncerText: {fileID: 0}
 --- !u!114 &5240193224595402274
 MonoBehaviour:
   m_ObjectHideFlags: 0

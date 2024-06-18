@@ -152,7 +152,6 @@ MonoBehaviour:
   particleEffect: {fileID: 7156633167851738641, guid: 10e83b6474a6f41509b1cb5d0fa27956, type: 3}
   pickUpDistance: 4
   value: 5
-  gameAnnouncerText: {fileID: 0}
 --- !u!114 &2562957079599513073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,5 +166,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Gold
   itemID: 1
-  quantity: 1
+  quantity: 5
   itemIcon: {fileID: 21300000, guid: cbcefaca00b59f448be35da1b4514741, type: 3}
