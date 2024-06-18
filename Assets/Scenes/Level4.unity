@@ -215,12 +215,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 185992307}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -75.45, y: 18.632, z: -113.71754}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 29.340004, y: 6.3219995, z: -8.107536}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1766508410}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &330677525 stripped
 Transform:
@@ -562,7 +562,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7144970246786110514, guid: 7510ce4ad65ab16468981b8161e7458a, type: 3}
       propertyPath: speed
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -7144970246786110514, guid: 7510ce4ad65ab16468981b8161e7458a, type: 3}
       propertyPath: player
@@ -570,7 +570,11 @@ PrefabInstance:
       objectReference: {fileID: 1766508410}
     - target: {fileID: -7144970246786110514, guid: 7510ce4ad65ab16468981b8161e7458a, type: 3}
       propertyPath: detectionRange
-      value: 30
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: -3295245655412611984, guid: 7510ce4ad65ab16468981b8161e7458a, type: 3}
+      propertyPath: enemyHealth
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 3070345916946160703, guid: 7510ce4ad65ab16468981b8161e7458a, type: 3}
       propertyPath: m_Name
@@ -775,7 +779,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7563484549351851159, guid: 2d28572797d49a348822464a127b3729, type: 3}
       propertyPath: m_Text
-      value: Find the way out!
+      value: Kill the demon king!!!
       objectReference: {fileID: 0}
     - target: {fileID: 8562203466990422488, guid: 2d28572797d49a348822464a127b3729, type: 3}
       propertyPath: m_Pivot.x
@@ -982,11 +986,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1350435457923549890, guid: ab27593d9acf2cc4d90d684252458892, type: 3}
       propertyPath: value
-      value: 100
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 5240193224595402274, guid: ab27593d9acf2cc4d90d684252458892, type: 3}
       propertyPath: quantity
-      value: 100
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 5376172855896603892, guid: ab27593d9acf2cc4d90d684252458892, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1633,7 +1637,10 @@ PrefabInstance:
       objectReference: {fileID: 2021740100}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 4087939060087859882, guid: 4a9ed4435bf73f243a1e0f43033e85c6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 185992309}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5216010360179803063, guid: 4a9ed4435bf73f243a1e0f43033e85c6, type: 3}
       insertIndex: -1
@@ -63270,7 +63277,6 @@ SceneRoots:
   - {fileID: 5509120568888806793}
   - {fileID: 764417096}
   - {fileID: 1024883923}
-  - {fileID: 185992309}
   - {fileID: 2117281886}
   - {fileID: 2082863679}
   - {fileID: 1800346778}
