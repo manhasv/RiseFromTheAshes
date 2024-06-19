@@ -7,7 +7,7 @@ public class HealthBar : MonoBehaviour
 {
     public float enemyHealth = 5;
 
-    private float currentHealth;
+    public float currentHealth;
     public Slider healthSlider;
     public GameObject gold;
     public float chance;

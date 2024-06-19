@@ -30,7 +30,7 @@ public class PlayerBehavior : MonoBehaviour
 
     void Update()
     {
-        if (transform.position.y < -50)
+        if (transform.position.y < -200)
         {
             FindObjectOfType<LevelManager>().LevelLost();
         }

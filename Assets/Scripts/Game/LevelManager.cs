@@ -8,7 +8,6 @@ public class LevelManager : MonoBehaviour
 {
     public static bool isGameOver = false;
     public Text gameText;
-    public Text goldText;
     public Slider healthBar;
     public Text missionCompleteText;
     public AudioClip gameOverSFX;
@@ -16,7 +15,7 @@ public class LevelManager : MonoBehaviour
     private float textDuration = 5f;
     private float textTimer = 0f;
 
-    public static bool hasGun = false;
+    public static bool hasGun = true;
     public static float playerDamage = 1;
     public static bool level1 = false;
     public static bool level2 = false;
@@ -41,10 +40,6 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    public void UpdateGold(float currentGold)
-    {
-        goldText.text = "Your Gold: " + currentGold;
-    }
 
     public void UpdateHealth(float currentHealth)
     {

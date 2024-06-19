@@ -1911,6 +1911,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 45
       objectReference: {fileID: 0}
+    - target: {fileID: 7596132497647568885, guid: 64b82f4c1f4e8ce46afbb806d4188ada, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -12.700012
+      objectReference: {fileID: 0}
     - target: {fileID: 7783314370800210881, guid: 64b82f4c1f4e8ce46afbb806d4188ada, type: 3}
       propertyPath: m_Text
       value: 'Gold: 0'
