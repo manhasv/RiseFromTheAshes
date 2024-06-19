@@ -1,0 +1,1058 @@
+fileFormatVersion: 2
+guid: 9a69271b82b14184d8061f1ca22da29e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2100637892464646520
+    second: ComputerSpriteSheet_0
+  - first:
+      213: 4074312653934826052
+    second: ComputerSpriteSheet_1
+  - first:
+      213: -6109709056750610522
+    second: ComputerSpriteSheet_2
+  - first:
+      213: -701321893011670654
+    second: ComputerSpriteSheet_3
+  - first:
+      213: 8271581654393589300
+    second: ComputerSpriteSheet_4
+  - first:
+      213: -1642413240749559686
+    second: ComputerSpriteSheet_5
+  - first:
+      213: 6632709916688194559
+    second: ComputerSpriteSheet_6
+  - first:
+      213: -9097885865353959008
+    second: ComputerSpriteSheet_7
+  - first:
+      213: -3183198228667608947
+    second: ComputerSpriteSheet_8
+  - first:
+      213: 7821413948656206618
+    second: ComputerSpriteSheet_9
+  - first:
+      213: 8147634167758236369
+    second: ComputerSpriteSheet_10
+  - first:
+      213: 542869581381633756
+    second: ComputerSpriteSheet_11
+  - first:
+      213: 2515554377397359813
+    second: ComputerSpriteSheet_12
+  - first:
+      213: -3144291507723054135
+    second: ComputerSpriteSheet_13
+  - first:
+      213: -2610589759378007955
+    second: ComputerSpriteSheet_14
+  - first:
+      213: -517697894013263331
+    second: ComputerSpriteSheet_15
+  - first:
+      213: -3641607009366420296
+    second: ComputerSpriteSheet_16
+  - first:
+      213: 614155955090752123
+    second: ComputerSpriteSheet_17
+  - first:
+      213: -4448602983907902232
+    second: ComputerSpriteSheet_18
+  - first:
+      213: 1093900353238984923
+    second: ComputerSpriteSheet_19
+  - first:
+      213: 881276130300915730
+    second: ComputerSpriteSheet_20
+  - first:
+      213: -2254001712554385577
+    second: ComputerSpriteSheet_21
+  - first:
+      213: -2381116152052234498
+    second: ComputerSpriteSheet_22
+  - first:
+      213: -506937675372913918
+    second: ComputerSpriteSheet_23
+  - first:
+      213: 566004426044776538
+    second: ComputerSpriteSheet_24
+  - first:
+      213: -8343823342080117072
+    second: ComputerSpriteSheet_25
+  - first:
+      213: -3077186815018788423
+    second: ComputerSpriteSheet_26
+  - first:
+      213: -1961292040839942873
+    second: ComputerSpriteSheet_27
+  - first:
+      213: -89774305892525958
+    second: ComputerSpriteSheet_28
+  - first:
+      213: 3307903308962460038
+    second: ComputerSpriteSheet_29
+  - first:
+      213: -8514038368062561665
+    second: ComputerSpriteSheet_30
+  - first:
+      213: 6389763714493229214
+    second: ComputerSpriteSheet_31
+  - first:
+      213: 8515321505236956855
+    second: ComputerSpriteSheet_32
+  - first:
+      213: -5608333992069262451
+    second: ComputerSpriteSheet_33
+  - first:
+      213: 435416330463981581
+    second: ComputerSpriteSheet_34
+  - first:
+      213: 2592733815924544266
+    second: ComputerSpriteSheet_35
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ComputerSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 333
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87994169807f62d10800000000000000
+      internalID: 2100637892464646520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 333
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4421aa9a5cdda8830800000000000000
+      internalID: 4074312653934826052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 333
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a79467cbf3f53ba0800000000000000
+      internalID: -6109709056750610522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 328
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 289b5dd34776446f0800000000000000
+      internalID: -701321893011670654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 334
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e84c0a0bf8ac270800000000000000
+      internalID: 8271581654393589300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 334
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7079b20cd9f439e0800000000000000
+      internalID: -1642413240749559686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 335
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb1962178e1c0c50800000000000000
+      internalID: 6632709916688194559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 337
+        width: 3
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a9a7841201ddb180800000000000000
+      internalID: -9097885865353959008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 333
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d805d9a831203d3d0800000000000000
+      internalID: -3183198228667608947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 328
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1340f2fb8e3b8c60800000000000000
+      internalID: 7821413948656206618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 214
+        width: 158
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1daa0198b16321170800000000000000
+      internalID: 8147634167758236369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 307
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd60e9d0209a88700800000000000000
+      internalID: 542869581381633756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 307
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c4d2f5d06b09e220800000000000000
+      internalID: 2515554377397359813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 307
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c3d3eb688b3d54d0800000000000000
+      internalID: -3144291507723054135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 306
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d685002027255cbd0800000000000000
+      internalID: -2610589759378007955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 275
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d122f5e1284c0d8f0800000000000000
+      internalID: -517697894013263331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 271
+        width: 43
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4542318b9667dc0800000000000000
+      internalID: -3641607009366420296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 213
+        width: 68
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7200e3569be58800800000000000000
+      internalID: 614155955090752123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 213
+        width: 68
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ec3d65e7236342c0800000000000000
+      internalID: -4448602983907902232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 224
+        width: 43
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd8eb7653905e2f00800000000000000
+      internalID: 1093900353238984923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 225
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 210fd97a8fbea3c00800000000000000
+      internalID: 881276130300915730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 201
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75fd218726d28b0e0800000000000000
+      internalID: -2254001712554385577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 201
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef64bf3b97394fed0800000000000000
+      internalID: -2381116152052234498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 201
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20b9220cedef6f8f0800000000000000
+      internalID: -506937675372913918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerSpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 108
+        width: 146
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a50a2b3d60adad700800000000000000
+      internalID: 566004426044776538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerSpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 108
+        width: 146
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b6b3bab0e8c43c80800000000000000
+      internalID: -8343823342080117072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerSpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 109
+        width: 68
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b91a4735e2ab45d0800000000000000
+      internalID: -3077186815018788423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerSpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 109
+        width: 68
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d2fecb74718c4e0800000000000000
+      internalID: -1961292040839942873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerSpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 97
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7891539ebe01cef0800000000000000
+      internalID: -89774305892525958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerSpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 97
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 681fb02988808ed20800000000000000
+      internalID: 3307903308962460038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerSpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 97
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f72a59ba63f08d980800000000000000
+      internalID: -8514038368062561665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerSpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 1
+        width: 146
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e98ac017e300da850800000000000000
+      internalID: 6389763714493229214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerSpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 1
+        width: 146
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b6b4ebfacf7c2670800000000000000
+      internalID: 8515321505236956855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerSpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 5
+        width: 68
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8396fcc2f13b22b0800000000000000
+      internalID: -5608333992069262451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerSpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 6
+        width: 68
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d00b5ba78d8ea0600800000000000000
+      internalID: 435416330463981581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ComputerSpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 334
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a03535f2bad3bf320800000000000000
+      internalID: 2592733815924544266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ComputerSpriteSheet_9: 7821413948656206618
+      ComputerSpriteSheet_23: -506937675372913918
+      ComputerSpriteSheet_29: 3307903308962460038
+      ComputerSpriteSheet_32: 8515321505236956855
+      ComputerSpriteSheet_24: 566004426044776538
+      ComputerSpriteSheet_28: -89774305892525958
+      ComputerSpriteSheet_34: 435416330463981581
+      ComputerSpriteSheet_11: 542869581381633756
+      ComputerSpriteSheet_33: -5608333992069262451
+      ComputerSpriteSheet_30: -8514038368062561665
+      ComputerSpriteSheet_16: -3641607009366420296
+      ComputerSpriteSheet_13: -3144291507723054135
+      ComputerSpriteSheet_10: 8147634167758236369
+      ComputerSpriteSheet_35: 2592733815924544266
+      ComputerSpriteSheet_21: -2254001712554385577
+      ComputerSpriteSheet_15: -517697894013263331
+      ComputerSpriteSheet_17: 614155955090752123
+      ComputerSpriteSheet_5: -1642413240749559686
+      ComputerSpriteSheet_12: 2515554377397359813
+      ComputerSpriteSheet_1: 4074312653934826052
+      ComputerSpriteSheet_2: -6109709056750610522
+      ComputerSpriteSheet_27: -1961292040839942873
+      ComputerSpriteSheet_8: -3183198228667608947
+      ComputerSpriteSheet_20: 881276130300915730
+      ComputerSpriteSheet_0: 2100637892464646520
+      ComputerSpriteSheet_18: -4448602983907902232
+      ComputerSpriteSheet_19: 1093900353238984923
+      ComputerSpriteSheet_25: -8343823342080117072
+      ComputerSpriteSheet_26: -3077186815018788423
+      ComputerSpriteSheet_31: 6389763714493229214
+      ComputerSpriteSheet_14: -2610589759378007955
+      ComputerSpriteSheet_22: -2381116152052234498
+      ComputerSpriteSheet_3: -701321893011670654
+      ComputerSpriteSheet_4: 8271581654393589300
+      ComputerSpriteSheet_7: -9097885865353959008
+      ComputerSpriteSheet_6: 6632709916688194559
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
