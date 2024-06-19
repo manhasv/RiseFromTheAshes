@@ -27,9 +27,9 @@ public class Level2_Restraint : MonoBehaviour
             nearPlayer = true;
             if (LevelManager.level2)
             {
-                text.text = "Press F to Win the Game!";
+                text.text = "Press F to Go to the Skeleton Castle!";
             } else {
-                text.text = "You need to defeat the king to unlock the door!";
+                text.text = "You need to defeat the King Mob to unlock the door!";
             
             }
         } else {

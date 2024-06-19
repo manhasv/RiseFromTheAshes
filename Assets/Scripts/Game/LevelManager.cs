@@ -19,6 +19,7 @@ public class LevelManager : MonoBehaviour
     public static float playerDamage = 1;
     public static bool level1 = false;
     public static bool level2 = false;
+    public static bool level3 = false;
     
     void Start()
     {
