@@ -229,7 +229,7 @@ public class BossController : MonoBehaviour
         isDead = true;
         agent.SetDestination(transform.position);
 
-        Destroy(gameObject);
+        Destroy(gameObject, 4);
     }
 
     void FindNextPoint()
