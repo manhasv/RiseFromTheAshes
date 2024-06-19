@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Rendering;
 using UnityEngine;
 
 public class RangedEnemyAI : MonoBehaviour
@@ -74,9 +73,7 @@ public class RangedEnemyAI : MonoBehaviour
     }
 
     void UpdatePatrolState()
-    {
-        enemySpeed = 2;
-        
+    {   
 
         if (Vector3.Distance(transform.position, nextDestination) < 1)
         {
@@ -86,7 +83,6 @@ public class RangedEnemyAI : MonoBehaviour
         {
             currentState = FSMStates.Chase;
         }
-
         transform.position = Vector3.MoveTowards(transform.position, nextDestination, enemySpeed * Time.deltaTime);
         FaceTarget(nextDestination);
     }

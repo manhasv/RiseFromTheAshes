@@ -52,6 +52,7 @@ public class NPCInteractable : MonoBehaviour
             Interact();
 
         }
+        
     }
 
     public void Interact()

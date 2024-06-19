@@ -14,11 +14,10 @@ public class PickupBehavior : MonoBehaviour
     public float value = 1f;
 
     bool pickUpAble = false;
-    public Text gameAnnouncerText;
     // Start is called before the first frame update
     void Start()
     {
-        gameAnnouncerText.gameObject.SetActive(false);
+        
         if (player == null)
         {
             player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -30,18 +29,16 @@ public class PickupBehavior : MonoBehaviour
     {
         if (Vector3.Distance(transform.position, player.position) <= pickUpDistance)
         {
-            gameAnnouncerText.gameObject.SetActive(true);
-            gameAnnouncerText.text = "Hit F to Pickup";
             pickUpAble = true;
+            Debug.Log("Press F to pick up");
         }
         else
         {
-            gameAnnouncerText.gameObject.SetActive(false);
+            pickUpAble = false;
         }
 
         if (pickUpAble && Input.GetKeyDown(KeyCode.F))
         {
-            gameAnnouncerText.gameObject.SetActive(false);
             AudioSource.PlayClipAtPoint(pickupSFX, transform.position);
             Instantiate(particleEffect, transform.position, transform.rotation);
             player.GetComponent<PlayerBehavior>().AddGold(value);

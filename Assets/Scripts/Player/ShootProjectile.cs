@@ -53,41 +53,4 @@ public class ShootProjectile : MonoBehaviour
         }
         
     }
-
-    // void ReticleEffect()
-    // {
-    //     RaycastHit hit;
-
-    //     if (Physics.Raycast(transform.position, transform.forward, out hit, Mathf.Infinity))
-    //     {
-    //         if (hit.collider.CompareTag("Enemy"))
-    //         {
-    //             currentProjectilePrefab = enemyBullet;
-
-    //             reticleImage.color = Color.Lerp(reticleImage.color, projectileColor, 2 * Time.deltaTime);
-    //             reticleImage.transform.localScale = Vector3.Lerp(reticleImage.transform.localScale, new Vector3(0.7f, 0.7f, 1), 2 * Time.deltaTime);
-    //         }
-    //         else if (hit.collider.CompareTag("Interactable"))
-    //         {
-    //             currentProjectilePrefab = objBullet;
-
-    //             reticleImage.color = Color.Lerp(reticleImage.color, diffuserColor, 2 * Time.deltaTime);
-    //             reticleImage.transform.localScale = Vector3.Lerp(reticleImage.transform.localScale, new Vector3(0.7f, 0.7f, 1), 2 * Time.deltaTime);
-    //         }
-    //         else
-    //         {
-    //             currentProjectilePrefab = enemyBullet;
-
-    //             reticleImage.color = Color.Lerp(reticleImage.color, originalReticleColor, 2 * Time.deltaTime);
-    //             reticleImage.transform.localScale = Vector3.Lerp(reticleImage.transform.localScale, Vector3.one, 2 * Time.deltaTime);
-    //         }
-    //     }
-    //     else
-    //     {
-    //         currentProjectilePrefab = enemyBullet;
-
-    //         reticleImage.color = Color.Lerp(reticleImage.color, originalReticleColor, 2 * Time.deltaTime);
-    //         reticleImage.transform.localScale = Vector3.Lerp(reticleImage.transform.localScale, Vector3.one, 2 * Time.deltaTime);
-    //     }
-    // }
 }

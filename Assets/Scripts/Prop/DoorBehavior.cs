@@ -9,7 +9,7 @@ public class DoorBehavior : MonoBehaviour
     public Transform player;
     public string sceneName;
     bool nearPlayer = false;
-    public Text gameAnnouncerText;
+    public Text doorHint;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,18 +22,16 @@ public class DoorBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(transform.position, player.position) <= 4)
+        if (Vector3.Distance(transform.position, player.position) <= 6)
         {
-            gameAnnouncerText.gameObject.SetActive(true);
-            gameAnnouncerText.text = "Click F to teleport to " + sceneName;
+            doorHint.text = "Click F to teleport to " + sceneName;
             nearPlayer = true;
         } else {
-            gameAnnouncerText.gameObject.SetActive(false);
+            nearPlayer = false;
         }
 
         if (nearPlayer && Input.GetKeyDown(KeyCode.F))
         {
-            gameAnnouncerText.gameObject.SetActive(false);
             SceneManager.LoadScene(sceneName);
         }
     }

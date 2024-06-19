@@ -9,6 +9,8 @@ public class HealthBar : MonoBehaviour
 
     private float currentHealth;
     public Slider healthSlider;
+    public GameObject gold;
+    public float chance;
     //public GameObject smoke; // For the particle system
 
     // Start is called before the first frame update
@@ -29,9 +31,13 @@ public class HealthBar : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Projectile"))
         {
-            currentHealth -= 1;
+            currentHealth -= LevelManager.playerDamage;
             if(currentHealth <= 0)
             {
+                if (Random.Range(0, 100) < chance)
+                {
+                    Instantiate(gold, transform.position, Quaternion.identity);
+                }
                 DestroyEnemy();
             }
         }
@@ -39,7 +45,6 @@ public class HealthBar : MonoBehaviour
 
     private void DestroyEnemy()
     {
-        //Instantiate(smoke, transform.position, transform.rotation);
         gameObject.SetActive(false);
         Destroy(gameObject, 1f);
     }
