@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 392001724618661559}
   - component: {fileID: 3355259187156052217}
   - component: {fileID: 3163222102179721107}
-  - component: {fileID: 1477905561768991635}
+  - component: {fileID: 8655110069282939262}
   m_Layer: 0
   m_Name: SmallGold
   m_TagString: Pickable
@@ -153,7 +153,7 @@ MonoBehaviour:
   pickUpDistance: 4
   value: 1
   gameAnnouncerText: {fileID: 0}
---- !u!114 &1477905561768991635
+--- !u!114 &8655110069282939262
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -166,6 +166,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Small Gold
-  itemID: 2
+  itemID: 1
   quantity: 1
-  itemIcon: {fileID: 21300000, guid: 30b13ee81b9c3456680664e537492723, type: 3}
+  itemIcon: {fileID: 21300000, guid: cbcefaca00b59f448be35da1b4514741, type: 3}
