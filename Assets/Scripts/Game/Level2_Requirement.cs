@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Level2Requirement : MonoBehaviour
+public class Level2_Requirement : MonoBehaviour
 {
     // Update is called once per frame
     void Update()

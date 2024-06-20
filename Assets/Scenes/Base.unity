@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 59124874}
   - component: {fileID: 59124873}
   - component: {fileID: 59124872}
-  - component: {fileID: 59124871}
+  - component: {fileID: 59124878}
   m_Layer: 0
   m_Name: Lv2 Door
   m_TagString: Untagged
@@ -145,18 +145,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &59124871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 59124870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28598bad35867514e9e2ec588594b0b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &59124872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -286,6 +274,18 @@ Transform:
   - {fileID: 1039538250}
   m_Father: {fileID: 1142712938}
   m_LocalEulerAnglesHint: {x: 0, y: -180.759, z: 0}
+--- !u!114 &59124878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59124870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e60d65ead2112841a290939736ca667, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &72146221
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4208,7 +4208,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -247.1, y: 15.4}
+  m_AnchoredPosition: {x: -247.09998, y: 15.400024}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 0}
 --- !u!1001 &519044922117748357

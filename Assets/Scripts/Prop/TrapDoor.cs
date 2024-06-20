@@ -30,7 +30,7 @@ public class TrapDoor : MonoBehaviour
         {
             doorHint.text = "LOL, Gotcha!";
             player.GetComponent<PlayerBehavior>().TakeDamage(20);
-            Invoke("Trap", 3f);
+            Invoke("Trap", 1f);
             
         }
     }
