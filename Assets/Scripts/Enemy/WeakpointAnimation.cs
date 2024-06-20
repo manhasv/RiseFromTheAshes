@@ -27,7 +27,7 @@ public class WeakpointAnimation : MonoBehaviour
         if (other.CompareTag("Projectile"))
         {
             var bossHealth = FindObjectOfType<BossHealth>();
-            bossHealth.TakeDamage(50);
+            bossHealth.TakeDamage(LevelManager.playerDamage);
             Destroy(other.gameObject);
         }
     }

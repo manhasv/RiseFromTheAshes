@@ -27,7 +27,7 @@ public class GainGun : MonoBehaviour
     private void InformPlayer()
     {
         text.gameObject.SetActive(true);
-        text.text = "Press 1 to equip gun";
+        text.text = "Press E to equip gun";
         hintText.text = "There is a hidden door to the next level. Find it!";
     }
     private void ClearText()

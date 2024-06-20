@@ -20,7 +20,6 @@ public class BossController : MonoBehaviour
     public float attackDistance = 3;
     public GameObject player;
     public float attackRate = 2;
-    public GameObject deadVFX;
     public GameObject projectilePrefab;
     public float projectileVelocity;
 
@@ -32,7 +31,7 @@ public class BossController : MonoBehaviour
     float elapsedTime = 0;
 
     BossHealth bossHealth;
-    int health;
+    float health;
     int currentDestinationIndex = 0;
     bool isDead;
 
@@ -118,7 +117,6 @@ public class BossController : MonoBehaviour
     // PATROL STATE - Player not in sight
     void UpdatePatrolState()
     {
-        print("Patrolling");
 
         anim.SetInteger("animState", 1);
 
@@ -251,7 +249,7 @@ public class BossController : MonoBehaviour
 
     private void OnDestroy()
     {
-        Instantiate(deadVFX, transform.position, transform.rotation);
+        LevelManager.level4 = true;
     }
 
     private void OnDrawGizmos()

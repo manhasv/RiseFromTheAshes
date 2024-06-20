@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -867850433923439439}
   - component: {fileID: -2155539212026631917}
   m_Layer: 0
-  m_Name: key_gold
+  m_Name: Lv2Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

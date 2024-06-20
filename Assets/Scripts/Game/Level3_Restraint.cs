@@ -24,19 +24,20 @@ public class Level3_Restraint : MonoBehaviour
         if (Vector3.Distance(transform.position, player.position) <= 4)
         {
             nearPlayer = true;
-            if (LevelManager.level3)
+            if (LevelManager.hasLv3Key)
             {
                 text.text = "Press F to Go to the Next Level!";
             } else {
-                text.text = "You need to defeat the mob to unlock the door!";
+                text.text = "You need to defeat the mob and grab the key to unlock the door!";
             
             }
         } else {
             nearPlayer = false;
         }
 
-        if (nearPlayer && Input.GetKeyDown(KeyCode.F) && LevelManager.level3)
+        if (nearPlayer && Input.GetKeyDown(KeyCode.F) && LevelManager.hasLv3Key)
         {
+            LevelManager.level3 = true;
             SceneManager.LoadScene(sceneName);
         }
     }

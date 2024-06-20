@@ -15,12 +15,16 @@ public class LevelManager : MonoBehaviour
     private float textDuration = 5f;
     private float textTimer = 0f;
 
+    // Game Related data
     public static bool hasGun = true;
     public static float playerDamage = 1;
     public static bool level1 = false;
     public static bool level2 = false;
+    public static bool hasLv2Key = false;
     public static bool level3 = false;
-
+    public static bool hasLv3Key = false;
+    public static bool level4 = false;
+    public static bool hasLv4Key = false;
     
     void Start()
     {
@@ -71,12 +75,12 @@ public class LevelManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    public void LevelBeat()
+    public void GameWin()
     {
         isGameOver = true;
         gameText.text = "GAME WIN!";
         gameText.gameObject.SetActive(true);
-
+        Time.timeScale = 0f;
         AudioSource.PlayClipAtPoint(gameWonSFX, GameObject.FindGameObjectWithTag("Player").transform.position);
     }
 

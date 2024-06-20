@@ -30,7 +30,6 @@ public class PickupBehavior : MonoBehaviour
         if (Vector3.Distance(transform.position, player.position) <= pickUpDistance)
         {
             pickUpAble = true;
-            Debug.Log("Press F to pick up");
         }
         else
         {

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KeyBehavior : MonoBehaviour
+public class KeyBehaviorLv3 : MonoBehaviour
 {
     public AudioClip lootSFX;
 
@@ -19,7 +19,7 @@ public class KeyBehavior : MonoBehaviour
         {
             AudioSource.PlayClipAtPoint(lootSFX, transform.position);
             gameObject.SetActive(false);
-            LevelManager.hasLv2Key = true;
+            LevelManager.hasLv3Key = true;
 
             Destroy(gameObject, 0.5f);
         }

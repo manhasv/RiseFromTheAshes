@@ -1,14 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
-public class Level2_Restraint : MonoBehaviour
+using UnityEngine.UI;
+public class Level4_Restraint : MonoBehaviour
 {
     public Transform player;
     bool nearPlayer = false;
-    public string sceneName;
     public Text text;
     // Start is called before the first frame update
     void Start()
@@ -24,22 +22,23 @@ public class Level2_Restraint : MonoBehaviour
     {
         if (Vector3.Distance(transform.position, player.position) <= 4)
         {
+            Debug.Log("Player is near the door");
             nearPlayer = true;
-            if (LevelManager.hasLv2Key)
+            if (LevelManager.hasLv4Key)
             {
-                text.text = "Press F to Open the Door!";
+                text.text = "Press F to Escape the Dungeon!";
             } else {
-                text.text = "You need to find the key to unlock the door! (Hint: Shoot the crates)";
+                text.text = "You need to defeat the King to unlock this door!";
             
             }
         } else {
             nearPlayer = false;
         }
 
-        if (nearPlayer && Input.GetKeyDown(KeyCode.F) && LevelManager.hasLv2Key)
+        if (nearPlayer && Input.GetKeyDown(KeyCode.F) && LevelManager.hasLv4Key)
         {
-            LevelManager.level2 = true;
-            SceneManager.LoadScene(sceneName);
+            LevelManager.level4 = true;
+            FindObjectOfType<LevelManager>().GameWin();
         }
     }
 }

@@ -7,8 +7,9 @@ public class BossHealth : MonoBehaviour
 {
     public Slider healthBar;
 
-    int maxHealth = 1000;
-    public int currentHealth;
+    public float maxHealth = 200;
+    public float currentHealth;
+    public GameObject key;
 
     void Start()
     {
@@ -22,10 +23,15 @@ public class BossHealth : MonoBehaviour
         healthBar.value = currentHealth;
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         currentHealth -= damage;
         var bossController = FindObjectOfType<BossController>();
         bossController.ShuffleWeakpoints();
+    }
+
+    private void OnDestroy()
+    {
+        Instantiate(key, transform.position, Quaternion.identity);
     }
 }

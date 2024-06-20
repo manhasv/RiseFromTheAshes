@@ -75,7 +75,7 @@ public class RogueEnemyAI : MonoBehaviour
             curState = FSMStates.Attack;
         } else if (distanceToPlayer > chaseDistance)
         {
-            
+            nextDestination =  transform.position;
         }
         FaceTarget(nextDestination);
         agent.SetDestination(nextDestination);
@@ -92,7 +92,7 @@ public class RogueEnemyAI : MonoBehaviour
             curState = FSMStates.Chase;
         } else if (distanceToPlayer > chaseDistance)
         {
-            
+            nextDestination =  transform.position;
         }
         FaceTarget(nextDestination);
     }

@@ -34,14 +34,9 @@ public class PlayerBehavior : MonoBehaviour
         {
             FindObjectOfType<LevelManager>().LevelLost();
         }
-
-        healthText.text = ((byte)currentHealth).ToString();
+        string healthAsString = currentHealth.ToString();
+        healthText.text = healthAsString;
         healthBar.value = currentHealth;
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        TakeDamage(1);
     }
 
     public void AddGold(float amount)
