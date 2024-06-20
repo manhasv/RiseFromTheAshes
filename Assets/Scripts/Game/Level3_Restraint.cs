@@ -1,10 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
-public class Level2_Restraint : MonoBehaviour
+using UnityEngine.UI;
+public class Level3_Restraint : MonoBehaviour
 {
     public Transform player;
     bool nearPlayer = false;
@@ -25,18 +24,18 @@ public class Level2_Restraint : MonoBehaviour
         if (Vector3.Distance(transform.position, player.position) <= 4)
         {
             nearPlayer = true;
-            if (LevelManager.level2)
+            if (LevelManager.level3)
             {
-                text.text = "Press F to Open the Door!";
+                text.text = "Press F to Go to the Next Level!";
             } else {
-                text.text = "You need to find the key to unlock the door!";
+                text.text = "You need to defeat the mob to unlock the door!";
             
             }
         } else {
             nearPlayer = false;
         }
 
-        if (nearPlayer && Input.GetKeyDown(KeyCode.F) && LevelManager.level2)
+        if (nearPlayer && Input.GetKeyDown(KeyCode.F) && LevelManager.level3)
         {
             SceneManager.LoadScene(sceneName);
         }

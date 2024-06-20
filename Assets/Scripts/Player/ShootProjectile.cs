@@ -11,8 +11,6 @@ public class ShootProjectile : MonoBehaviour
 
     public AudioClip shootSFX;
 
-    //public Image reticleImage;
-
     public Color projectileColor;
 
     public Color diffuserColor;
@@ -25,7 +23,6 @@ public class ShootProjectile : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //originalReticleColor = reticleImage.color;
         currentProjectilePrefab = enemyBullet;
     }
 
