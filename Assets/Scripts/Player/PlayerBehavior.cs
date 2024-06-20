@@ -89,12 +89,7 @@ public class PlayerBehavior : MonoBehaviour
     public void AddHealth(float health)
     {
         maxHealth += health;
-        if (currentHealth < maxHealth)
-        {
-            currentHealth += health;
-        } else {
-            currentHealth = maxHealth;
-        }
+        currentHealth = maxHealth;
         healthBar.value = currentHealth;
     }
 

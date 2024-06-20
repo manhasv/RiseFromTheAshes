@@ -1067,7 +1067,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   speedIncrease: 1
-  price: 10
+  price: 40
   NPC_Text: {fileID: 1804976364460930380}
 --- !u!1001 &491181963
 PrefabInstance:
