@@ -17,14 +17,17 @@ public class Equip : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(LevelManager.hasGun && Input.GetKeyDown("1"))
+        if(LevelManager.hasGun && Input.GetKeyDown(KeyCode.E))
         {
+            Debug.Log("Try to equip gun");
             if (Slot1.activeSelf)
             {
+                Debug.Log("Gun is equipped");
                 Slot1.SetActive(false);
             }
             else
             {
+                Debug.Log("Gun is not equipped");
                 Slot1.SetActive(true);
             }
         }

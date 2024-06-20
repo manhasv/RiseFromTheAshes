@@ -393,17 +393,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1766508410}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &281166817 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3434682730752943816, guid: f808e17281a664918a869e277454d996, type: 3}
-  m_PrefabInstance: {fileID: 1570147598}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f3a68c605e4346fca9600cfcc0ee2b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &330677525 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2511023542857733715, guid: 0945f4af0e802c24194cfdf33702e384, type: 3}
@@ -1870,6 +1859,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 422930, guid: 61b75a7c91dbf604287b8d02081b338a, type: 3}
   m_PrefabInstance: {fileID: 1391907258}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1400642499
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1016255933274590705, guid: 95667454850b369429afb742a6395806, type: 3}
+      propertyPath: m_Name
+      value: EventSystem
+      objectReference: {fileID: 0}
+    - target: {fileID: 5406122915061236120, guid: 95667454850b369429afb742a6395806, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5406122915061236120, guid: 95667454850b369429afb742a6395806, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5406122915061236120, guid: 95667454850b369429afb742a6395806, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5406122915061236120, guid: 95667454850b369429afb742a6395806, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5406122915061236120, guid: 95667454850b369429afb742a6395806, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5406122915061236120, guid: 95667454850b369429afb742a6395806, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5406122915061236120, guid: 95667454850b369429afb742a6395806, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5406122915061236120, guid: 95667454850b369429afb742a6395806, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5406122915061236120, guid: 95667454850b369429afb742a6395806, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5406122915061236120, guid: 95667454850b369429afb742a6395806, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 95667454850b369429afb742a6395806, type: 3}
 --- !u!4 &1465763208 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2511023542857733715, guid: 0945f4af0e802c24194cfdf33702e384, type: 3}
@@ -1893,34 +1939,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 649264307445046107, guid: f808e17281a664918a869e277454d996, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 281166817}
-    - target: {fileID: 649264307445046107, guid: f808e17281a664918a869e277454d996, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ExitGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 649264307445046107, guid: f808e17281a664918a869e277454d996, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PauseMenuBehavior, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5046469132286473747, guid: f808e17281a664918a869e277454d996, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -169
-      objectReference: {fileID: 0}
-    - target: {fileID: 6276325915147659140, guid: f808e17281a664918a869e277454d996, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 281166817}
-    - target: {fileID: 6276325915147659140, guid: f808e17281a664918a869e277454d996, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ResumeGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 6276325915147659140, guid: f808e17281a664918a869e277454d996, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PauseMenuBehavior, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 6362305552787332706, guid: f808e17281a664918a869e277454d996, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2001,69 +2019,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6877639051877010468, guid: f808e17281a664918a869e277454d996, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6877639051877010468, guid: f808e17281a664918a869e277454d996, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6877639051877010468, guid: f808e17281a664918a869e277454d996, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6877639051877010468, guid: f808e17281a664918a869e277454d996, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 281166817}
-    - target: {fileID: 6877639051877010468, guid: f808e17281a664918a869e277454d996, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 281166817}
-    - target: {fileID: 6877639051877010468, guid: f808e17281a664918a869e277454d996, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ResumeGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 6877639051877010468, guid: f808e17281a664918a869e277454d996, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: ResumeGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 6877639051877010468, guid: f808e17281a664918a869e277454d996, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PauseMenuBehavior, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 6877639051877010468, guid: f808e17281a664918a869e277454d996, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: PauseMenuBehavior, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 6877639051877010468, guid: f808e17281a664918a869e277454d996, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7292383055070644976, guid: f808e17281a664918a869e277454d996, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7292383055070644976, guid: f808e17281a664918a869e277454d996, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 281166817}
-    - target: {fileID: 7292383055070644976, guid: f808e17281a664918a869e277454d996, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: LoadMainMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 7292383055070644976, guid: f808e17281a664918a869e277454d996, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: PauseMenuBehavior, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 7653972871949848344, guid: f808e17281a664918a869e277454d996, type: 3}
       propertyPath: m_Name
       value: PauseMenuCanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 8239370289340413433, guid: f808e17281a664918a869e277454d996, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5010,3 +4968,4 @@ SceneRoots:
   - {fileID: 822020728}
   - {fileID: 132560439}
   - {fileID: 1570147598}
+  - {fileID: 1400642499}
