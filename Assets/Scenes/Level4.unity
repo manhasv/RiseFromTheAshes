@@ -2196,6 +2196,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 132560439}
     m_Modifications:
+    - target: {fileID: 17279774611204947, guid: 64eff3827c53d9444867853a328d343e, type: 3}
+      propertyPath: key
+      value: 
+      objectReference: {fileID: 4924680705473217271, guid: b0cbb2314dac5354eb4e963731a4a504, type: 3}
+    - target: {fileID: 17279774611204947, guid: 64eff3827c53d9444867853a328d343e, type: 3}
+      propertyPath: projectileVelocity
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3544929585164617810, guid: 64eff3827c53d9444867853a328d343e, type: 3}
       propertyPath: m_Name
       value: SkeletonBoss

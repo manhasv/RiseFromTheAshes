@@ -1956,6 +1956,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 200
       objectReference: {fileID: 0}
+    - target: {fileID: 2943303779162802601, guid: 64b82f4c1f4e8ce46afbb806d4188ada, type: 3}
+      propertyPath: m_Text
+      value: T
+      objectReference: {fileID: 0}
     - target: {fileID: 3958047006720445903, guid: 64b82f4c1f4e8ce46afbb806d4188ada, type: 3}
       propertyPath: m_Sprite
       value: 

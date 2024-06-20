@@ -9,7 +9,6 @@ public class BossHealth : MonoBehaviour
 
     public float maxHealth = 200;
     public float currentHealth;
-    public GameObject key;
 
     void Start()
     {
@@ -30,8 +29,4 @@ public class BossHealth : MonoBehaviour
         bossController.ShuffleWeakpoints();
     }
 
-    private void OnDestroy()
-    {
-        Instantiate(key, transform.position, Quaternion.identity);
-    }
 }

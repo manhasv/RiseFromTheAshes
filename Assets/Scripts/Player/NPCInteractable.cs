@@ -47,7 +47,7 @@ public class NPCInteractable : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && NPCIsInteracting)
+        if (Input.GetKeyDown(KeyCode.T) && NPCIsInteracting)
         {
             Interact();
 

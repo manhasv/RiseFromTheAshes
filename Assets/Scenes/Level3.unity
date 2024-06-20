@@ -10795,6 +10795,10 @@ PrefabInstance:
       value: LootCrate
       objectReference: {fileID: 0}
     - target: {fileID: 5564884498760280453, guid: 66c2647f4f749644ea8212b97b669949, type: 3}
+      propertyPath: key
+      value: 
+      objectReference: {fileID: 4924680705473217271, guid: 2805a4d7ef4f1e34aa82ec6a2e446e7f, type: 3}
+    - target: {fileID: 5564884498760280453, guid: 66c2647f4f749644ea8212b97b669949, type: 3}
       propertyPath: hasKey
       value: 1
       objectReference: {fileID: 0}

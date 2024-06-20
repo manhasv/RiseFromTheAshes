@@ -17,6 +17,8 @@ public class RogueEnemyAI : MonoBehaviour
     public GameObject player;
     public float speed = 5;
     public float attackDistance = 3;
+    public float damage = 10;
+    public float attackRate = 2;
     HealthBar enemyHealth;
     float health;
 
@@ -87,7 +89,12 @@ public class RogueEnemyAI : MonoBehaviour
         if (distanceToPlayer <= attackDistance)
         {
             curState = FSMStates.Attack;
-        } else if (distanceToPlayer > attackDistance && distanceToPlayer <=chaseDistance)
+            if (elapsedTime >= attackRate)
+            {
+                player.GetComponent<PlayerBehavior>().TakeDamage(damage);
+                elapsedTime = 0;
+            }
+        } else if (distanceToPlayer > attackDistance && distanceToPlayer <= chaseDistance)
         {
             curState = FSMStates.Chase;
         } else if (distanceToPlayer > chaseDistance)

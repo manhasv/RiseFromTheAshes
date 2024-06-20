@@ -41,6 +41,7 @@ public class BossController : MonoBehaviour
     public Transform attackingHand;
     public float fieldOfView = 100f;
     public GameObject[] weakpoints;
+    public GameObject key;
 
     void Start()
     {
@@ -170,7 +171,7 @@ public class BossController : MonoBehaviour
     #region ATTACK STATE
     void UpdateAttackState()
     {
-        print("Attacking");
+        anim.SetInteger("animState", 3);
 
         nextDestination = player.transform.position;
 
@@ -192,7 +193,7 @@ public class BossController : MonoBehaviour
 
         FaceTarget(nextDestination);
 
-        anim.SetInteger("animState", 3);
+        
 
         if (!LevelManager.isGameOver)
         {
@@ -226,8 +227,8 @@ public class BossController : MonoBehaviour
         anim.SetInteger("animState", 4);
         isDead = true;
         agent.SetDestination(transform.position);
-
-        Destroy(gameObject, 4);
+        Instantiate(key, transform.position, Quaternion.identity);
+        Destroy(gameObject, 3);
     }
 
     void FindNextPoint()
