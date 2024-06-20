@@ -30,7 +30,7 @@ public class ShootProjectile : MonoBehaviour
     void Update()
     {
         
-        if (gun.activeSelf && Input.GetButtonDown("Fire1") && !LevelManager.isGameOver)
+        if (gun.activeSelf && Input.GetButtonDown("Fire1") && !LevelManager.isGameOver && !PauseMenuBehavior.isGamePaused)
         {
             GameObject projectile = Instantiate(currentProjectilePrefab, transform.position + transform.forward, transform.rotation) as GameObject;
 
