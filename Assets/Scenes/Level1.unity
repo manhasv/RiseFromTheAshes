@@ -1788,6 +1788,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 6759692979186331124}
   lootSFX: {fileID: 8300000, guid: 5ae2146a9e5bc44579835efdfeaa90a9, type: 3}
+  hintText: {fileID: 307008731}
 --- !u!54 &468118240
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9060,6 +9061,10 @@ PrefabInstance:
     - target: {fileID: 4196145939169624607, guid: 24d792b42851eb2498087e4e62dfe217, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5317708135689915143, guid: 24d792b42851eb2498087e4e62dfe217, type: 3}
+      propertyPath: m_Name
+      value: GuideText
       objectReference: {fileID: 0}
     - target: {fileID: 7232292891807417331, guid: 24d792b42851eb2498087e4e62dfe217, type: 3}
       propertyPath: m_Pivot.x

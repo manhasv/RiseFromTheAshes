@@ -20,10 +20,8 @@ public class RogueEnemyAI : MonoBehaviour
     HealthBar enemyHealth;
     float health;
 
-    int curDestination = 0;
     float distanceToPlayer;
     Vector3 nextDestination;
-    bool isDead;
     float elapsedTime;
     NavMeshAgent agent;
     // Start is called before the first frame update
@@ -32,7 +30,6 @@ public class RogueEnemyAI : MonoBehaviour
         enemyHealth = GetComponent<HealthBar>();
         health = enemyHealth.currentHealth;
         elapsedTime = 0;
-        isDead = false;
         Initialize();
         agent = GetComponent<NavMeshAgent>();
     }
@@ -102,7 +99,6 @@ public class RogueEnemyAI : MonoBehaviour
 
     void UpdateDeadState()
     {
-        isDead = true;
         Destroy(gameObject, 2);
     }
 

@@ -7,17 +7,17 @@ public class GainGun : MonoBehaviour
 {
     public Text text;
     public AudioClip lootSFX;
-    //public GameObject trap;
+    public Text hintText;
     private void OnCollisionEnter(Collision collision)
     {
         Debug.Log("Collision detected with " + collision.gameObject.tag + "!");
         if (collision.gameObject.tag == "Player")
         {
             LevelManager.hasGun = true;
+            LevelManager.level1 = true;
             AudioSource.PlayClipAtPoint(lootSFX, transform.position);
             InformPlayer();
             Invoke("ClearText", 2f);
-            //GameObject spawnedEnemy = Instantiate(trap, transform.position, transform.rotation) as GameObject;
             Destroy(gameObject, 4f);
             
 
@@ -28,6 +28,7 @@ public class GainGun : MonoBehaviour
     {
         text.gameObject.SetActive(true);
         text.text = "Press 1 to equip gun";
+        hintText.text = "There is a hidden door to the next level. Find it!";
     }
     private void ClearText()
     {

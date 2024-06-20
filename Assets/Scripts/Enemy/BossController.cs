@@ -34,7 +34,6 @@ public class BossController : MonoBehaviour
     BossHealth bossHealth;
     int health;
     int currentDestinationIndex = 0;
-    bool isDead;
 
     NavMeshAgent agent;
 
@@ -47,7 +46,7 @@ public class BossController : MonoBehaviour
     {
         bossHealth = GetComponent<BossHealth>();
         health = bossHealth.currentHealth;
-        isDead = false;
+
 
         if (player == null)
         {
@@ -223,7 +222,6 @@ public class BossController : MonoBehaviour
     void UpdateDeadState()
     {
         anim.SetInteger("animState", 4);
-        isDead = true;
         agent.SetDestination(transform.position);
 
         Destroy(gameObject, 4);
