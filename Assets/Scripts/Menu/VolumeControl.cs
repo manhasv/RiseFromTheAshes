@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class VolumeControl : MonoBehaviour
 {
     public Slider volumeSlider;
-    public AudioClip tester;
     float volume;
 
     void Start()
@@ -18,6 +17,5 @@ public class VolumeControl : MonoBehaviour
     public void SetVolume(float volume)
     {
         AudioListener.volume = volume;
-        AudioSource.PlayClipAtPoint(tester, Camera.main.transform.position);
     }
 }
