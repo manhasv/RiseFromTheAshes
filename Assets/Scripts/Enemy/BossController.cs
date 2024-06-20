@@ -20,7 +20,7 @@ public class BossController : MonoBehaviour
     public float attackDistance = 3;
     public GameObject player;
     public float attackRate = 2;
-    //public GameObject deadVFX;
+    public GameObject deadVFX;
     public GameObject projectilePrefab;
     public float projectileVelocity;
 
@@ -34,6 +34,7 @@ public class BossController : MonoBehaviour
     BossHealth bossHealth;
     int health;
     int currentDestinationIndex = 0;
+    bool isDead;
 
     NavMeshAgent agent;
 
@@ -46,7 +47,7 @@ public class BossController : MonoBehaviour
     {
         bossHealth = GetComponent<BossHealth>();
         health = bossHealth.currentHealth;
-
+        isDead = false;
 
         if (player == null)
         {
@@ -117,6 +118,7 @@ public class BossController : MonoBehaviour
     // PATROL STATE - Player not in sight
     void UpdatePatrolState()
     {
+        print("Patrolling");
 
         anim.SetInteger("animState", 1);
 
@@ -170,6 +172,8 @@ public class BossController : MonoBehaviour
     #region ATTACK STATE
     void UpdateAttackState()
     {
+        print("Attacking");
+
         nextDestination = player.transform.position;
 
         agent.stoppingDistance = attackDistance;
@@ -222,6 +226,7 @@ public class BossController : MonoBehaviour
     void UpdateDeadState()
     {
         anim.SetInteger("animState", 4);
+        isDead = true;
         agent.SetDestination(transform.position);
 
         Destroy(gameObject, 4);
@@ -246,13 +251,16 @@ public class BossController : MonoBehaviour
 
     private void OnDestroy()
     {
-        //Instantiate(deadVFX, transform.position, transform.rotation);
+        Instantiate(deadVFX, transform.position, transform.rotation);
     }
 
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
+        //Gizmos.DrawWireSphere(transform.position, attackDistance);
+
         Gizmos.color = Color.green;
+        //Gizmos.DrawWireSphere(transform.position, chaseDistance);
 
         Vector3 frontRayPoint = enemyEyes.position + (enemyEyes.forward * chaseDistance);
         Vector3 leftRayPoint = Quaternion.Euler(0, fieldOfView * 0.5f, 0) * frontRayPoint;
@@ -276,6 +284,7 @@ public class BossController : MonoBehaviour
             {
                 if (hit.collider.CompareTag("Player"))
                 {
+                    print("Player in sight!");
                     return true;
                 }
                 return false;
