@@ -32,18 +32,21 @@ public class ShootProjectile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        if (gun.activeSelf && Input.GetButtonDown("Fire1") && !LevelManager.isGameOver)
+        if (!PauseMenuBehavior.isGamePaused)
         {
-            GameObject projectile = Instantiate(currentProjectilePrefab, transform.position + transform.forward, transform.rotation) as GameObject;
+            if (gun.activeSelf && Input.GetButtonDown("Fire1") && !LevelManager.isGameOver)
+            {
+                GameObject projectile = Instantiate(currentProjectilePrefab, transform.position + transform.forward, transform.rotation) as GameObject;
 
-            Rigidbody rb = projectile.GetComponent<Rigidbody>();
-            rb.AddForce(transform.forward * projectileSpeed, ForceMode.VelocityChange);
+                Rigidbody rb = projectile.GetComponent<Rigidbody>();
+                rb.AddForce(transform.forward * projectileSpeed, ForceMode.VelocityChange);
 
-            projectile.transform.SetParent(GameObject.FindGameObjectWithTag("ProjectileParent").transform);
+                projectile.transform.SetParent(GameObject.FindGameObjectWithTag("ProjectileParent").transform);
 
-            AudioSource.PlayClipAtPoint(shootSFX, transform.position);
+                AudioSource.PlayClipAtPoint(shootSFX, transform.position);
+            }
         }
+        
     }
 
     private void FixedUpdate()
