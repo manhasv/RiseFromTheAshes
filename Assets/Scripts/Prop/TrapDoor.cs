@@ -28,7 +28,7 @@ public class TrapDoor : MonoBehaviour
 
         if (nearPlayer && Input.GetKeyDown(KeyCode.F))
         {
-            doorHint.text = "LOL, Gotcha!";
+            doorHint.text = "LOL, Gotcha! You just stepped on a trap, find another door!";
             player.GetComponent<PlayerBehavior>().TakeDamage(20);
             Invoke("Trap", 1f);
             
@@ -37,7 +37,6 @@ public class TrapDoor : MonoBehaviour
 
     private void Trap()
     {
-        doorHint.gameObject.SetActive(false);
         Destroy(gameObject);
     }
 }

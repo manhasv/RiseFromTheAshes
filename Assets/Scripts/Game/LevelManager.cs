@@ -16,7 +16,7 @@ public class LevelManager : MonoBehaviour
     private float textTimer = 0f;
 
     // Game Related data
-    public static bool hasGun = true;
+    public static bool hasGun = false;
     public static float playerDamage = 1;
     public static bool level1 = false;
     public static bool level2 = false;

@@ -227,8 +227,12 @@ public class BossController : MonoBehaviour
         anim.SetInteger("animState", 4);
         isDead = true;
         agent.SetDestination(transform.position);
+        Invoke("Die", 2);
+    }
+
+    private void Die() {
         Instantiate(key, transform.position, Quaternion.identity);
-        Destroy(gameObject, 3);
+        Destroy(gameObject);
     }
 
     void FindNextPoint()
